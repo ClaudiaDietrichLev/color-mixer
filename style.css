@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-size: 25px;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.redRange {
+    accent-color: red;
+}
+
+.greenRange {
+    accent-color: green;
+}
+
+.blueRange {
+    accent-color: blue;
+}
+
+main {
+    --range-red: 100;
+    --range-green: 150;
+    --range-blue: 50;
+    height: 100vh;
+    background: rgb(var(--range-red), var(--range-green), var(--range-blue));
+
+}
+
